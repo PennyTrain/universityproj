@@ -145,38 +145,107 @@
 
     /*end of css reset*/
 
-body {
-    background-color: #ee9dd0;
-}
+    /* GENERAL ELEMENTS  */
 
-footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    body {
+        background-color: #f7a3dd;
+    }
 
-footer .socials {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+    a {
+        color: white;
+        font-size: 1rem;
+    }
 
-footer .socials li {
-    margin: 0 10px;
-}
+    a:hover {
+        color: #f7a3dd;
+    }
 
-footer .socials a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-}
+    /* NAVBAR STYLES */
 
-footer .socials a:hover {
-    color: #ccc; /* Optional: Change color on hover */
-}
+    nav {
+        background-color: black;
+        color: white;
+    }
 
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: #f7a3dd;
+    }
+
+    .dropdown-menu {
+        background-color: black;
+    }
+
+    .dropdown-item {
+        color: white;
+    }
+
+    .dropdown-item:hover {
+        color: #f7a3dd;
+        background-color: black;
+    }
+
+    .dropdown-toggle {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-toggle:hover {
+        color: #f7a3dd;
+        text-decoration: none;
+    }
+
+    .nav-link:focus,
+    .dropdown-toggle:focus {
+        color: #f7a3dd;
+        outline: none;
+    }
+
+
+    /* FOOTER STYLES */
+
+    footer .socials {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer .socials li {
+        margin: 0 10px;
+    }
+
+    footer .socials a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    footer .socials a:hover {
+        color: #f7a3dd;
+    }
+
+    /* 
+    STYLES FOR INDEX.HTML */
+
+    .custom-img-size {
+        width: 50rem;
+        height: 30rem;
+        margin: 0 auto;
+        border: 5px, solid, black;
+        border-radius: 10%;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    }
