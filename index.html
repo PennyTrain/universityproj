@@ -11,39 +11,42 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./inclass.html"><i class="fa-solid fa-b"></i><i class="fa-brands fa-d-and-d"></i><i class="fa-solid fa-b"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
-                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-b"></i><i
+                        class="fa-brands fa-d-and-d"></i><i class="fa-solid fa-b"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars hamburger"></i></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample05">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./form.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
-                            aria-expanded="false">What We Offer</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                            <li><a class="dropdown-item" href="#">Lashes</a></li>
-                            <li><a class="dropdown-item" href="#">Waxing</a></li>
-                            <li><a class="dropdown-item" href="#">Body Treatments</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./form.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                                aria-expanded="false">What We Offer</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="./nails.html">Nails</a></li>
+                                <li><a class="dropdown-item" href="./lashes.html">Lashes</a></li>
+                                <li><a class="dropdown-item" href="./treatments.html">Body Treatments</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- CONTENT  -->
-        <h1>Welcome to Beauty Bliss</h1>
-        <p>Your award winning beauty salon in Carlton Colville</p>
     <!-- CAROUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -56,24 +59,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/placeholder.png" class="d-block custom-img-size" alt="...">
+                <img src="./assets/images/ai-generated-8659170_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <!-- text here if want -->
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/placehlder2.png" class="d-block custom-img-size" alt="...">
+                <img src="./assets/images/ai-generated-8659169_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <!-- text here if want -->
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/placeholder3.png" class="d-block custom-img-size" alt="...">
+                <img src="./assets/images/candle-1718960_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <!-- text here if want -->
                 </div>
             </div>
         </div>
@@ -88,30 +88,62 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <main>
+        <h1 class="heading">Our Services</h1>
+        <!-- CARDS -->
+        <div class="card-container">
+            <div class="card" id="card-one" style="width: 18rem;">
+                <img src="./assets/images/hand-3161974_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="./nails.html" class="btn">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="card-two" style="width: 18rem;">
+                <img src="./assets/images/beautician-5529805_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="./lashes.html" class="btn">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="card-three" style="width: 18rem;">
+                <img src="./assets/images/hand-3161974_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="./treatments.html" class="btn">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- FOOTER -->
     <footer>
         <ul class="socials">
             <li>
-                <a href="#" target="blank_" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                <a href="facebook.com" target="blank_" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i
+                        class="fab fa-facebook"></i></a>
             </li>
             <li>
-                <a href="#" target="blank_" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i
+                        class="fab fa-twitter"></i></a>
             </li>
             <li>
-                <a href="#" target="blank_" rel="noopener"
-                    aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i
+                        class="fab fa-youtube"></i></a>
             </li>
             <li>
-                <a href="#" target="blank_" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i
+                        class="fab fa-instagram"></i></a>
             </li>
         </ul>
     </footer>
-
-        <!-- The Link for all The Font Awesome Icons -->
-        <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
+    <!-- The Link for all The Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
