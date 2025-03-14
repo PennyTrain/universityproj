@@ -16,29 +16,29 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-b"></i><i
+                <a class="navbar-brand link logo" href="./index.html"><i class="fa-solid fa-b"></i><i
                         class="fa-brands fa-d-and-d"></i><i class="fa-solid fa-b"></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border link hamburger" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars hamburger"></i></span>
+                    <span class="navbar-toggler-icon link"><i class="fa-solid fa-bars hamburger"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./form.html">Contact Us</a>
+                            <a class="nav-link link" href="./form.html">Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle link" href="#" id="dropdown05" data-bs-toggle="dropdown"
                                 aria-expanded="false">What We Offer</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item" href="./nails.html">Nails</a></li>
-                                <li><a class="dropdown-item" href="./lashes.html">Lashes</a></li>
-                                <li><a class="dropdown-item" href="./treatments.html">Body Treatments</a></li>
+                            <ul class="dropdown-menu dropdown-container" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item link" href="./nails.html">Nails</a></li>
+                                <li><a class="dropdown-item link" href="./lashes.html">Lashes</a></li>
+                                <li><a class="dropdown-item link" href="./treatments.html">Body Treatments</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -46,43 +46,49 @@
             </div>
         </nav>
     </header>
-    <main id="contact-content">
-        <form id="box-two">
-            <label for="firstname" class="form-label">First Name:</label>
-            <input type="text" id="firstname" name="firstname" class="form-control" aria-label="First Name" required>
-        
-            <label for="lastname" class="form-label">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" class="form-control" aria-label="Last Name" required>
-        
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" name="email" class="form-control" aria-label="Email" required>
-        
-            <label for="phone" class="form-label">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" class="form-control" aria-label="Phone Number">
-        
-            <label for="appointment_type" class="form-label">Appointment Type:</label>
-            <select id="appointment_type" name="appointment_type" class="form-control" aria-label="Appointment Type" required>
-                <option value="" disabled selected>Select an option</option>
-                <option value="Lashes">Lashes</option>
-                <option value="Nails">Nails</option>
-                <option value="Treatment">Body-treatment</option>
-            </select>
-        
-            <label for="appointment_date" class="form-label">Appointment Date:</label>
-            <input type="date" id="appointment_date" name="appointment_date" class="form-control" aria-label="Appointment Date" required>
-        
-            <label for="appointment_time" class="form-label">Appointment Time:</label>
-            <input type="time" id="appointment_time" name="appointment_time" class="form-control" aria-label="Appointment Time" required>
-        
-            <button type="submit" class="btn" formaction="submit.html">Submit</button>
-        </form>
+    <main class="container contact-container">
+        <div class="row">
+            <form class="col-lg-6">
+                <label for="firstname" class="form-label">First Name:</label>
+                <input type="text" id="firstname" name="firstname" class="form-control" aria-label="First Name"
+                    required>
 
-        <div id="box-one">
+                <label for="lastname" class="form-label">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" class="form-control" aria-label="Last Name" required>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" aria-label="Email" required>
+
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" aria-label="Phone Number">
+
+                <label for="appointment_type" class="form-label">Appointment Type:</label>
+                <select id="appointment_type" name="appointment_type" class="form-control" aria-label="Appointment Type"
+                    required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Lashes">Lashes</option>
+                    <option value="Nails">Nails</option>
+                    <option value="Treatment">Body-treatment</option>
+                </select>
+
+                <label for="appointment_date" class="form-label">Appointment Date:</label>
+                <input type="date" id="appointment_date" name="appointment_date" class="form-control"
+                    aria-label="Appointment Date" required>
+
+                <label for="appointment_time" class="form-label">Appointment Time:</label>
+                <input type="time" id="appointment_time" name="appointment_time" class="form-control"
+                    aria-label="Appointment Time" required>
+
+                <button type="submit" class="btn" formaction="submit.html">Submit</button>
+            </form>
+
+        <div class="col-lg-6 map-container">
             <iframe title="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCuBfkrmtyc3Rd8u2uYxb0xa2ozAvCz7fY&q=Beauty+Bliss,22+Lowestoft+Road,Carlton+Colville,NR33+8JD">
             </iframe>
         </div>
+    </div>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -112,23 +118,23 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const form = document.getElementById('box-two');
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent the default form submission behavior
-        
-                    const firstName = document.getElementById('firstname').value;
-                    const appointmentType = document.getElementById('appointment_type').value;
-        
-                    localStorage.setItem('firstName', firstName);
-                    localStorage.setItem('appointmentType', appointmentType);
-        
-                    window.location.href = "submit.html";
-                });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('box-two');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+
+                const firstName = document.getElementById('firstname').value;
+                const appointmentType = document.getElementById('appointment_type').value;
+
+                localStorage.setItem('firstName', firstName);
+                localStorage.setItem('appointmentType', appointmentType);
+
+                window.location.href = "submit.html";
             });
-        </script>
-    
+        });
+    </script>
+
 </body>
 
 </html>

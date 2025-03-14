@@ -149,9 +149,18 @@
 
     body {
         background-color: #fec6c3;
-        /* background-color: #8a8a8a; */
+        font-size: 20px;
+        margin-bottom: 5rem;
     }
 
+    .heading {
+        font-size: 40px;
+        padding: 2rem;
+        text-decoration: bold;
+        text-align: center;
+    }
+
+    /* NAVBAR */
     nav {
         height: 9rem;
         color: white;
@@ -162,16 +171,14 @@
         background-color: black;
     }
 
-    
-
     .link {
         color: white;
     }
 
     .link:hover,
     .link:focus {
-        color:#fec6c3;
-        background-color:black;
+        color: #fec6c3;
+        background-color: black;
     }
 
     .hamburger {
@@ -184,4 +191,130 @@
         margin-right: 3rem;
     }
 
-    
+    /* TABLES */
+    .service-table table {
+        border: 2px solid #343a40;
+        width: 100%;
+        margin: 0 auto;
+        /* Centers the table */
+        border-collapse: collapse;
+    }
+
+    .service-table thead {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .service-table th,
+    .service-table td {
+        padding: 15px;
+        text-align: left;
+        /* Ensure text is aligned properly */
+        border-bottom: 1px solid #ddd;
+    }
+
+    .service-table th {
+        font-weight: bold;
+    }
+
+    .service-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+
+    /* SERVICE PAGES */
+    .service-container {
+        margin: 4rem;
+        padding: 2rem;
+        background-color: rgb(248, 249, 250, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-info {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .service-info .heading {
+        font-size: 2.5rem;
+        color: #343a40;
+        margin-bottom: 1rem;
+    }
+
+    .service-info .text {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+
+    /* HOME PAGE */
+
+
+
+    /* CARD */
+
+    .all-cards {
+        justify-content: center;
+    }
+
+    .button {
+        background-color: black;
+        border: 3px, solid, gray;
+        border-radius: 10%;
+        margin-top: 2rem;
+
+    }
+
+    .cards {
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
+        background-color: #fbe0de;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+        transition: transform 0.3s ease;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    /* CONTACT US */
+
+
+    .map-container iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 2rem 0;
+    }
+
+    /* FOOTER STYLES */
+    footer {
+        background-color: black;
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer .socials {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    footer .socials li {
+        display: inline-block;
+    }
+
+    footer .socials a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
