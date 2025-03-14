@@ -152,242 +152,36 @@
         /* background-color: #8a8a8a; */
     }
 
-    a {
-        color: white;
-        font-size: 1rem;
-    }
-
-    a:hover {
-        color: #fcd5d4;
-    }
-
-    .contact-info {
-        text-decoration: underline;
-        color: black;
-    }
-
-    .heading {
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-        padding: 3rem;
-    }
-
-    main {
-        margin-bottom: 8rem;
-    }
-
-    /* HEADER STYLES */
-
-    .banner {
-        border: 2px solid gray;
-    }
-
-    .banner-text {
-        font-size: 1rem;
-        display: flex;
-        justify-content: flex-end;
-        margin: 1rem 2rem 0 0;
-    }
-
-    /* NAVBAR STYLES */
-
     nav {
-        height: 6rem;
-    }
-
-    nav,
-    .container-fluid,
-    .dropdown-menu {
+        height: 9rem;
+        color: white;
         background-color: black;
+    }
+
+    .dropdown-container {
+        background-color: black;
+    }
+
+    
+
+    .link {
         color: white;
-        z-index: 1000;
     }
 
-    .nav-link,
-    .dropdown-toggle,
-    .dropdown-item {
-        color: white;
-    }
-
-    .nav-link:hover,
-    .dropdown-item:hover,
-    .dropdown-toggle:hover,
-    .nav-link:focus,
-    .dropdown-toggle:focus {
-        color: #fcd5d4;
-        outline: none;
-    }
-
-    .navbar-toggler {
-        background-color: rgb(73, 72, 72);
-        border: 2px solid white;
+    .link:hover,
+    .link:focus {
+        color:#fec6c3;
+        background-color:black;
     }
 
     .hamburger {
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        color: white;
+        padding-top: .4rem;
     }
 
-    .carousel-item {
-        height: 40rem;
+    .logo {
+        font-size: 32px;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
-    .carousel {
-        border-bottom: 1rem solid black;
-    }
-
-    .carousel img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: none;
-        width: auto;
-        height: auto;
-        min-height: 100%;
-        min-width: 100%;
-    }
-
-    /* CONTACT US */
-    /* FORM */
-
-    form {
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        /* Softer border color */
-        border-radius: 15px;
-        background-color: #f6e1cf;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 5rem;
-    }
-
-    form .form-label {
-        font-weight: bold;
-    }
-
-    form .form-control {
-        border: 1px solid #ccc;
-        /* Softer border color */
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: white;
-    }
-
-    form .form-text {
-        font-size: 0.9rem;
-    }
-
-    #contact-content {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    #box-one,
-    #box-two {
-        min-width: 300px;
-    }
-
-    #box-one iframe {
-        width: 100%;
-        border: 0;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* SUBMIT */
-
-    /* .submit-body {
-        background-image: url('../images/flora-7231668_1280.jpg');
-    }
-
-    .submit-main {
-        background-color: #fec6c3;
-        font-size: 4rem;
-        border: 10px solid black;
-        border-radius: 15px;
-        margin-top: 5rem;
-        margin-left: 30rem;
-        margin-right: 30rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-
-
-
-    /* CARDS */
-
-    .card-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        margin: 1rem 7rem;
-    }
-
-    .card {
-        flex: 1;
-        border: 2px solid black;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
-        text-align: center;
-        background-color: #f6e1cf;
-        font-family: 'Georgia', serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #333;
-        transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn {
-        background-color: black;
-        color: white;
-        border: 3px, solid, gray;
-        border-radius: 10%;
-        margin: 1rem;
-    }
-
-    /* FOOTER STYLES */
-
-    footer {
-        background-color: black;
-        padding: 20px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-    }
-
-    footer .socials {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-    }
-
-    footer .socials li {
-        margin: 0 10px;
-    }
-
-    footer .socials a {
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-    }
-
-    footer .socials a:hover {
-        color: #fcd5d4;
-    }
+    
