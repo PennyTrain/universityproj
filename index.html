@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -15,7 +16,7 @@
     <header>
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
-            <div class="container-fluid">
+            <div class="container-fluid moving-nav">
                 <a class="navbar-brand link logo" href="./index.html"><i class="fa-solid fa-b"></i><i
                         class="fa-brands fa-d-and-d"></i><i class="fa-solid fa-b"></i></a>
                 <button class="navbar-toggler border link hamburger" type="button" data-bs-toggle="collapse"
@@ -46,7 +47,6 @@
             </div>
         </nav>
     </header>
-    <!-- CONTENT  -->
     <!-- CAROUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -61,19 +61,19 @@
             <div class="carousel-item active">
                 <img src="./assets/images/ai-generated-8659170_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <!-- text here if want -->
+                    <p class="carousel-title">Welcome to Beauty Bliss</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./assets/images/ai-generated-8659169_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <!-- text here if want -->
+                    <p class="carousel-title">Welcome to Beauty Bliss</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/candle-1718960_1280.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/flowers-8598056_1280.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <!-- text here if want -->
+                    <p class="carousel-title">Welcome to Beauty Bliss</p>
                 </div>
             </div>
         </div>
@@ -88,57 +88,196 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <main class="container home-container">
-        <h1 class="heading">Our Services</h1>
-        <!-- CARDS -->
-        <div class="row all-cards">
-            <div class="card col-lg-4 col-md-3 col-sm-12 cards" style="width: 18rem;">
-                <img src="./assets/images/hand-3161974_1280.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Lashes</h5>
-                    <p class="card-text">Enhance your natural beauty with our professional lash extensions. Perfect for any occasion!</p>
-                    <a href="./nails.html" class="btn button link">Take a look!</a>
+    <!-- CONTENT  -->
+    <main class="container">
+        <section>
+            <h1 class="home-heading">Our Services</h1>
+            <!-- CARDS -->
+            <div class="row all-cards">
+                <div class="card col-lg-4 col-md-3 col-sm-12 cards">
+                    <img src="./assets/images/IMG_9064.jpg" class="card-img-top card-image"
+                        alt="Someone whos eye lashes are perfect">
+                    <div class="card-body">
+                        <h5 class="card-title">Lashes</h5>
+                        <p class="card-text">Enhance your natural beauty with our professional lash extensions. Perfect
+                            for
+                            any occasion!</p>
+                        <a href="./nails.html" class="btn button link">Take a look!</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-3 col-sm-12 cards">
+                    <img src="./assets/images/beautician-5529805_1280.jpg" class="card-img-top card-image"
+                        alt="A lady doing someones nails">
+                    <div class="card-body">
+                        <h5 class="card-title">Nails</h5>
+                        <p class="card-text">Get the perfect manicure with our wide range of nail services. From classic
+                            to
+                            trendy designs!</p>
+                        <a href="./lashes.html" class="btn button link">Take a look!</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-3 col-sm-12 cards">
+                    <img src="./assets/images/people-3184615_1280.jpg" class="card-img-top card-image"
+                        alt="A lady getting a spa treatment">
+                    <div class="card-body">
+                        <h5 class="card-title">Treatments</h5>
+                        <p class="card-text">Indulge in our luxurious treatments designed to rejuvenate and refresh your
+                            skin. Feel pampered!</p>
+                        <a href="./treatments.html" class="btn button link">Take a look!</a>
+                    </div>
                 </div>
             </div>
-            <div class="card col-lg-4 col-md-3 col-sm-12 cards" style="width: 18rem;">
-                <img src="./assets/images/beautician-5529805_1280.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Nails</h5>
-                    <p class="card-text">Get the perfect manicure with our wide range of nail services. From classic to trendy designs!</p>
-                    <a href="./lashes.html" class="btn button link">Take a look!</a>
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <h2 class="home-heading">What Our Clients Say</h2>
+            <div class="row testimonial-holder">
+                <div class="card col-lg-3 col-md-3 col-sm-12 cards">
+                    <div class="card-body review-body">
+                        <p class="reviewer">Jane Doe</p>
+                        <p class="rating">★★★★★</p>
+                        <h5 class="card-title">Excellent Service!</h5>
+                        <p class="card-text">"I had an amazing experience at Beauty Bliss. The staff were friendly and
+                            professional, and the treatments were top-notch. Highly recommend!"</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-sm-12 cards">
+                    <div class="card-body review-body">
+                        <p class="reviewer">John Smith</p>
+                        <p class="rating">★★★★★</p>
+                        <h5 class="card-title">Wonderful Atmosphere</h5>
+                        <p class="card-text">"The salon has a wonderful atmosphere and the staff made me feel very
+                            comfortable. I will definitely be coming back for more treatments."</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-sm-12 cards">
+                    <div class="card-body review-body">
+                        <p class="reviewer">Emily Johnson</p>
+                        <p class="rating">★★★★★</p>
+                        <h5 class="card-title">Great Results</h5>
+                        <p class="card-text">"I am so happy with the results of my facial treatment. My skin feels
+                            rejuvenated and looks fantastic. Thank you, Beauty Bliss!"</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-sm-12 cards">
+                    <div class="card-body review-body">
+                        <p class="reviewer">Sarah Brown</p>
+                        <p class="rating">★★★★★</p>
+                        <h5 class="card-title">Highly Professional</h5>
+                        <p class="card-text">"The team at Beauty Bliss is highly professional and attentive. They really
+                            listen to your needs and provide excellent service. I couldn't be happier!"</p>
+                    </div>
                 </div>
             </div>
-            <div class="card col-lg-4 col-md-3 col-sm-12 cards" style="width: 18rem;">
-                <img src="./assets/images/hand-3161974_1280.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Treatments</h5>
-                    <p class="card-text">Indulge in our luxurious treatments designed to rejuvenate and refresh your skin. Feel pampered!</p>
-                    <a href="./treatments.html" class="btn button link">Take a look!</a>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
+
     <!-- FOOTER -->
     <footer>
-        <ul class="socials">
-            <li>
-                <a href="facebook.com" target="blank_" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i
-                        class="fab fa-facebook link"></i></a>
-            </li>
-            <li>
-                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i
-                        class="fab fa-twitter link"></i></a>
-            </li>
-            <li>
-                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i
-                        class="fab fa-youtube link"></i></a>
-            </li>
-            <li>
-                <a href="#" target="blank_" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fab fa-instagram link"></i></a>
-            </li>
-        </ul>
+        <section class="subscribe">
+            <div>
+                <h1 class="heading">Join Our Mailing List!</h1>
+                <p class="text">Join our mailing list to be the first to know about new and exciting treatments,
+                    promotions
+                    and offers
+                    from Beauty Bliss!</p>
+            </div>
+            <div class="row subscribe-form">
+                <form id="subscribeForm" class="text">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname">
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="small-print text">
+                <p>By clicking on subscribe you agree to join our mailing lists to receive news and information about
+                    our
+                    products, services and promotions. You can opt out at anytime. Read our privacy policy.</p>
+            </div>
+        </section>
+        <div class="row footer-info">
+            <div class="col-lg-4 footer-times">
+                <h3 class="sub-heading">OPEN HOURS</h3>
+                <table class="open-hours-table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9am - 7:30pm</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9am - 6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9am - 3pm</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-4 footer-news">
+                <h3 class="sub-heading">NEWS</h3>
+                <p class="text">
+                    <span>We are excited to announce we will soon be launching an exciting NEW skincare brand</span>
+                    <span>CRYSTAL CLEAR</span>
+                    <span>We will be holding a launch event</span>
+                    <span>Thursday 20th March @ 5.30pm</span>
+                    <span>Tickets will be very limited so please let us know if you would like to attend this event to
+                        see and</span>
+                    <span>learn all about this amazing treatment</span>
+                </p>
+            </div>
+            <div class="col-lg-4 footer-contact">
+                <h3 class="sub-heading">CONTACT US</h3>
+                <p class="text">
+                    <span>Beauty Bliss</span>
+                    <span>22 Lowestoft Road</span>
+                    <span>Carlton Colville NR33 8JD</span>
+                    <span>Phone: 01502 539051</span>
+                </p>
+            </div>
+        </div>
     </footer>
+    <!-- STOPS SUBSCRIBE FORM FROM REAPPEARING AFTER SUBMISSION -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if the user has already submitted the form
+            if (localStorage.getItem('formSubmitted')) {
+                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
+            }
+        
+            document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                // Replace the form with a message
+                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
+        
+                // Store the form submission status in localStorage
+                localStorage.setItem('formSubmitted', 'true');
+            });
+        });
+        </script> -->
     <!-- The Link for all The Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Bundle -->
