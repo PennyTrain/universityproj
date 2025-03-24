@@ -174,7 +174,9 @@
     }
 
     .small-print {
+        margin-top: .5rem;
         font-size: 15px;
+        text-align: center;
     }
 
     p.text span {
@@ -252,6 +254,7 @@
     /* SERVICE PAGES */
     .service-container {
         margin-top: 3rem;
+        margin: 4rem;
         padding: 2rem;
         background-color: rgb(248, 249, 250, 0.5);
         border-radius: 10px;
@@ -359,15 +362,6 @@
 
     /* CONTACT US */
 
-    .form-container {
-        padding: 20px;
-        font-size: 16px;
-        color: #333;
-        gap: .5rem;
-        display: flex;
-        flex-direction: column;
-    }
-
     .map-container iframe {
         border: none;
         width: 100%;
@@ -401,10 +395,86 @@
         object-fit: cover;
     }
 
+    /* ACCORDION */
+
+    /* ACCORDION STYLE */
+.special-offers-accordion {
+    background-color: #fbe0de;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.offers-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #d96426;
+    margin-bottom: 1.5rem;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fbe0de;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #d96426;
+}
+
+.accordion-button {
+    background-color: #fec6c3;
+    color: #333;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fec6c3;
+    text-align:center;
+}
+
+.accordion-content p {
+    margin-bottom: 1rem;
+}
+
+.offer-button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.offer-button:hover {
+    background-color: #333;
+}
+
     /* SUBMITTED */
 
     .booked-message {
         text-align: center;
+        background-color:#fbe0de;
+        border-radius: 10px;
+        color: black;
+        margin: 3rem;
+        padding: 2rem;
     }
 
     /* SUBSCRIBE */
@@ -415,30 +485,72 @@
         margin-right: 5rem;
     }
 
-    .subscribe-form form {
+    
+    .form-container {
+        padding: 20px;
+        font-size: 16px;
+        color: #333;
+        gap: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-desc {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    form {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .subscribe-form input {
+    form input {
         width: 30rem;
         margin: auto;
-    }
+    }   
 
-    .subscribe-form input[type="text"],
-    .subscribe-form input[type="email"] {
+    form input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
         padding: 10px;
         border: none;
         border-radius: 5px;
     }
 
-    .subscribe-form input[type="submit"] {
+    form input[type="submit"] {
         padding: 10px;
         background-color: #fbe0de;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    @media (max-width: 800px) {
+        .subscribe-form {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    
+        .form-container {
+            padding: 10px;
+            font-size: 12px;
+        }
+    
+        .form-desc {
+            font-size: 16px;
+        }
+    
+        form input {
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        .display-none {
+            display:none;
+        }
     }
 
     /* FOOTER STYLES */

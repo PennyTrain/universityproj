@@ -128,8 +128,38 @@
                 </div>
             </div>
         </section>
+        <!-- OFFERS -->
+        <section class="offers-container">
+            <h2 class="home-heading">Special Offers</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">20% Off Facials</button>
+                    <div class="accordion-content">
+                        <p>Pamper yourself with our luxurious facials and enjoy 20% off your first booking. Perfect for
+                            rejuvenating your skin!</p>
+                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Buy One Get One Free Manicure</button>
+                    <div class="accordion-content">
+                        <p>Treat yourself and a friend to a stunning manicure. Book one and get the second one free.
+                            Limited time offer!</p>
+                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Free Lash Tint with Lash Extensions</button>
+                    <div class="accordion-content">
+                        <p>Enhance your lashes with our professional extensions and receive a free lash tint. Achieve
+                            the perfect look!</p>
+                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- TESTIMONIALS -->
-        <section class="testimonials">
+        <section class="testimonials display-none">
             <h2 class="home-heading">What Our Clients Say</h2>
             <div class="row testimonial-holder">
                 <div class="card col-lg-3 col-md-3 col-sm-12 cards">
@@ -260,24 +290,42 @@
         </div>
     </footer>
     <!-- STOPS SUBSCRIBE FORM FROM REAPPEARING AFTER SUBMISSION -->
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if the user has already submitted the form
-            if (localStorage.getItem('formSubmitted')) {
-                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-            }
-        
-            document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent the default form submission
-        
-                // Replace the form with a message
-                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-        
-                // Store the form submission status in localStorage
-                localStorage.setItem('formSubmitted', 'true');
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     // Check if the user has already submitted the form
+        //     if (localStorage.getItem('formSubmitted')) {
+        //         document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
+        //     }
+
+        //     document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+        //         event.preventDefault(); // Prevent the default form submission
+
+        //         // Replace the form with a message
+        //         document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
+
+        //         // Store the form submission status in localStorage
+        //         localStorage.setItem('formSubmitted', 'true');
+        //     });
+        // });
+
+
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+
+                button.classList.toggle('active');
+
+                if (button.classList.contains('active')) {
+                    accordionContent.style.display = 'block';
+                } else {
+                    accordionContent.style.display = 'none';
+                }
             });
         });
-        </script> -->
+
+
+
+    </script>
     <!-- The Link for all The Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Bundle -->

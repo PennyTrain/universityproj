@@ -46,10 +46,18 @@
             </div>
         </nav>
     </header>
-    <main class="container service-container">
-        <div class="row">
+    <main class="container">
+        <div class="row service-container">
+            <h1 class="heading">Book with us!</h1>
+            <p class="form-desc display-none">
+                <span>Experience the Ultimate in Beauty and Relaxation!</span>
+                <span>At Beauty Bliss Therapies, we offer a wide range of luxurious treatments designed to enhance your
+                    natural beauty and rejuvenate your spirit. Whether you're looking for a stunning manicure,
+                    soothing facial, or relaxing massage, we have the perfect service to meet your needs. Book your
+                    appointment today and discover the blissful difference!</span>
+            </p>
+
             <form class="col-lg-6 form-container">
-                <h1 class="heading">Book with us!</h1>
                 <label for="firstname" class="form-label">First Name:</label>
                 <input type="text" id="firstname" name="firstname" class="form-control" aria-label="First Name"
                     required>
@@ -89,6 +97,9 @@
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCuBfkrmtyc3Rd8u2uYxb0xa2ozAvCz7fY&q=Beauty+Bliss,22+Lowestoft+Road,Carlton+Colville,NR33+8JD">
                 </iframe>
             </div>
+            <p class="small-print">Can we politely remind everyone, we do require at least 24 hours notice to cancel or
+                change your appointment. Failure to do so will result in 50% of your treatment value fee being charged.
+                We reserve the right to refuse to rebook your appointment if you fail to comply with our policy. </p>
         </div>
     </main>
     <!-- FOOTER -->
@@ -96,7 +107,7 @@
         <section class="subscribe">
             <div>
                 <h1 class="heading">Join Our Mailing List!</h1>
-                <p class="text">Join our mailing list to be the first to know about new and exciting treatments,
+                <p class="text display-none">Join our mailing list to be the first to know about new and exciting treatments,
                     promotions
                     and offers
                     from Beauty Bliss!</p>
@@ -186,33 +197,36 @@
         crossorigin="anonymous"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
 
-                const firstName = document.getElementById('firstname').value;
-                const appointmentType = document.getElementById('appointment_type').value;
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-                localStorage.setItem('firstName', firstName);
-                localStorage.setItem('appointmentType', appointmentType);
+        // Clear old data from localStorage
+        localStorage.removeItem('firstName');
+        localStorage.removeItem('appointmentType');
 
-                window.location.href = "submit.html";
-            });
-        });
+        const firstName = document.getElementById('firstname').value;
+        const appointmentType = document.getElementById('appointment_type').value;
 
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.querySelector('form');
-            form.addEventListener('submit', function (event) {
-                const appointmentDate = document.getElementById('appointment_date').value;
-                const today = new Date().toISOString().split('T')[0];
+        // Store new data in localStorage
+        localStorage.setItem('firstName', firstName);
+        localStorage.setItem('appointmentType', appointmentType);
 
-                if (appointmentDate < today) {
-                    event.preventDefault();
-                    alert('Please select a future date for your appointment.');
-                }
-            });
-        });
+        window.location.href = "submit.html";
+    });
 
+    form.addEventListener('submit', function (event) {
+        const appointmentDate = document.getElementById('appointment_date').value;
+        const today = new Date().toISOString().split('T')[0];
+
+        if (appointmentDate < today) {
+            event.preventDefault();
+            alert('Please select a future date for your appointment.');
+        }
+    });
+});
     </script>
 
 </body>
