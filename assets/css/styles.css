@@ -395,6 +395,32 @@
         object-fit: cover;
     }
 
+
+    /* FAQ */
+
+    .faq {
+        background-color: #fbe0de;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    .faq-item h3 {
+        color: #000000;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .faq-item p {
+        color: #333;
+        font-size: 1rem;
+    }
+    
     /* ACCORDION */
 
     /* ACCORDION STYLE */
@@ -424,8 +450,8 @@
 }
 
 .accordion-button {
-    background-color: #fec6c3;
-    color: #333;
+    background-color: #fbe0fb !important; /* Change this to your desired color */
+    color: #333 !important;
     padding: 1rem;
     width: 100%;
     text-align: left;
