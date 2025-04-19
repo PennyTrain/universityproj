@@ -30,7 +30,6 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon link"><i class="fa-solid fa-bars hamburger"></i></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -150,7 +149,7 @@
                     <div class="accordion-content">
                         <p>Pamper yourself with our luxurious facials and enjoy 20% off your first booking. Perfect for
                             rejuvenating your skin!</p>
-                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                        <a href="./form.html" class="btn offer-button link">Book Now</a>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -158,7 +157,7 @@
                     <div class="accordion-content">
                         <p>Treat yourself and a friend to a stunning manicure. Book one and get the second one free.
                             Limited time offer!</p>
-                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                        <a href="./form.html" class="btn offer-button link">Book Now</a>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -166,7 +165,7 @@
                     <div class="accordion-content">
                         <p>Enhance your lashes with our professional extensions and receive a free lash tint. Achieve
                             the perfect look!</p>
-                        <a href="./form.html" class="btn offer-button">Book Now</a>
+                        <a href="./form.html" class="btn offer-button link">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -310,12 +309,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             if (localStorage.getItem('formSubmitted')) {
-                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                document.querySelector('.subscribe').innerHTML = '<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
             } else {
                 document.getElementById('subscribeForm').addEventListener('submit', function (event) {
                     event.preventDefault(); // Prevent the default form submission
                     // Replace the entire subscribe section with a message
-                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    document.querySelector('.subscribe').innerHTML = '<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
                     // Store the form submission status in localStorage
                     localStorage.setItem('formSubmitted', 'true');
                 });

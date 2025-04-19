@@ -627,3 +627,13 @@
         background-color: #333;
         color: #fff;
     }
+
+    .final-message {
+        display: flex;
+        color: #333;
+        justify-content: center;
+        margin: 2rem;
+        padding: 1rem;
+        background-color: #fbe0de;
+        border-radius: 10px;
+    }

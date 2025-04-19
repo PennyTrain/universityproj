@@ -234,12 +234,12 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             if (localStorage.getItem('formSubmitted')) {
-                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                document.querySelector('.subscribe').innerHTML = '<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
             } else {
                 document.getElementById('subscribeForm').addEventListener('submit', function (event) {
                     event.preventDefault(); // Prevent the default form submission
                     // Replace the entire subscribe section with a message
-                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    document.querySelector('.subscribe').innerHTML ='<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
                     // Store the form submission status in localStorage
                     localStorage.setItem('formSubmitted', 'true');
                 });
