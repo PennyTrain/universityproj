@@ -148,7 +148,7 @@
     /* GENERAL ELEMENTS  */
 
     body {
-        background-color: #fec6c3;
+        background-color: rgb(254, 198, 195);
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
     }
@@ -285,7 +285,7 @@
 
     .button {
         background-color: #333;
-        border: 3px, solid, gray;
+        border: 3px, solid, #808080;
         border-radius: 10%;
         margin-top: 2rem;
         padding: 1rem;
@@ -314,7 +314,9 @@
 
     /* TESTIMONIALS */
 
-    .testimonials {}
+    .testimonial-holder {
+        margin: 1rem;
+    }
 
     .home-heading {
         color: black;
@@ -324,7 +326,7 @@
         box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
         background-color: #fbe0de;
         color: #333;
-        font-size: 40px;
+        font-size: 3rem;
         padding: 2rem;
         text-decoration: bold;
         text-align: center;
@@ -395,7 +397,11 @@
         object-fit: cover;
     }
 
-
+    .custom-icon {
+        color: blue;
+        font-size: 24px;
+    }
+    
     /* FAQ */
 
     .faq {
@@ -501,7 +507,9 @@
         color: black;
         margin: 3rem;
         padding: 2rem;
+
     }
+
 
     /* SUBSCRIBE */
 
@@ -571,7 +579,7 @@
     
         form input {
             width: 100%;
-            max-width: 20rem;
+            max-width: 20rem;   
         }
 
         .display-none {
