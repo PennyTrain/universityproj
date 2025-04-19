@@ -29,8 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active link" aria-current="page" href="./index.html">Home<i
-                                    class="bi bi-0-square custom-icon"></i></a>
+                            <a class="nav-link active link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link" href="./form.html">Contact Us</a>
@@ -61,19 +60,22 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/ai-generated-8659170_1280.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/calm-left.jpg" class="d-block w-100"
+                    alt="Calming and aesthetically pleasing photo of shampoo bottles">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="carousel-title"></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/ai-generated-8659169_1280.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/calm-right.jpg" class="d-block w-100"
+                    alt="Calming and aesthetically pleasing photo of shampoo bottles">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="carousel-title"></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/flowers-8598056_1280.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/calm-light.jpg" class="d-block w-100"
+                    alt="Calming and aesthetically pleasing photo of flowers and candles">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="carousel-title"></p>
                 </div>
@@ -92,12 +94,14 @@
     </div>
     <!-- CONTENT  -->
     <main class="container">
+        <!-- SERVICES -->
         <section>
             <h1 class="home-heading">Our Services</h1>
             <!-- CARDS -->
             <div class="row all-cards">
+                <!-- LASHES -->
                 <div class="card col-lg-4 col-md-3 col-sm-12 cards">
-                    <img src="./assets/images/IMG_9064.jpg" class="card-img-top card-image"
+                    <img src="./assets/images/lashes.jpg" class="card-img-top card-image"
                         alt="Someone whos eye lashes are perfect">
                     <div class="card-body">
                         <h5 class="card-title">Lashes</h5>
@@ -107,8 +111,9 @@
                         <a href="./lashes.html" class="btn button link">Take a look!</a>
                     </div>
                 </div>
+                <!-- NAILS -->
                 <div class="card col-lg-4 col-md-3 col-sm-12 cards">
-                    <img src="./assets/images/beautician-5529805_1280.jpg" class="card-img-top card-image"
+                    <img src="./assets/images/lady-nails.jpg" class="card-img-top card-image"
                         alt="A lady doing someones nails">
                     <div class="card-body">
                         <h5 class="card-title">Nails</h5>
@@ -118,9 +123,10 @@
                         <a href="./nails.html" class="btn button link">Take a look!</a>
                     </div>
                 </div>
+                <!-- TREATMENTS -->
                 <div class="card col-lg-4 col-md-3 col-sm-12 cards">
-                    <img src="./assets/images/people-3184615_1280.jpg" class="card-img-top card-image"
-                        alt="A lady getting a spa treatment">
+                    <img src="./assets/images/stone-massage.jpg" class="card-img-top card-image"
+                        alt="A lady getting a spa treatment with stones on her back">
                     <div class="card-body">
                         <h5 class="card-title">Treatments</h5>
                         <p class="card-text">Indulge in our luxurious treatments designed to rejuvenate and refresh your
@@ -203,11 +209,9 @@
             </div>
         </section>
     </main>
-
     <!-- FOOTER -->
     <footer>
-
-        <section class="subscribe">
+        <section class="subscribe display-none">
             <div>
                 <h1 class="heading">Join Our Mailing List! <i class="bi bi-0-square"></i></h1>
                 <p class="text">Join our mailing list to be the first to know about new and exciting treatments,
@@ -218,13 +222,13 @@
             <div class="row subscribe-form">
                 <form id="subscribeForm" class="text">
                     <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" required>
 
                     <label for="lastname">Last Name:</label>
                     <input type="text" id="lastname" name="lastname">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <input type="submit" value="Submit">
                 </form>
@@ -292,25 +296,26 @@
             </div>
         </div>
     </footer>
-    <!-- STOPS SUBSCRIBE FORM FROM REAPPEARING AFTER SUBMISSION -->
+    <!-- The Link for all The Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script>
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     // Check if the user has already submitted the form
-        //     if (localStorage.getItem('formSubmitted')) {
-        //         document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-        //     }
-
-        //     document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-        //         event.preventDefault(); // Prevent the default form submission
-
-        //         // Replace the form with a message
-        //         document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-
-        //         // Store the form submission status in localStorage
-        //         localStorage.setItem('formSubmitted', 'true');
-        //     });
-        // });
-
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('formSubmitted')) {
+                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+            } else {
+                document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    // Replace the entire subscribe section with a message
+                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    // Store the form submission status in localStorage
+                    localStorage.setItem('formSubmitted', 'true');
+                });
+            }
+        });
 
         document.querySelectorAll('.accordion-button').forEach(button => {
             button.addEventListener('click', () => {
@@ -326,15 +331,7 @@
             });
         });
 
-
-
     </script>
-    <!-- The Link for all The Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

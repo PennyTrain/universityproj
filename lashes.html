@@ -50,57 +50,61 @@
     <!-- CONTENT  -->
     <main>
         <section class="row service-container">
-        <div class="col-lg-6 service-info">
-            <h1 class="heading">
-                Lashes
-            </h1>
-            <p class="text">Enhance your natural beauty with our professional lash extensions. Perfect for any occasion!
-            </p>
-        </div>
-        <div class="col-lg-6 service-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Classic Lash Extensions</td>
-                        <td>£50.00</td>
-                    </tr>
-                    <tr>
-                        <td>Volume Lash Extensions</td>
-                        <td>£60.00</td>
-                    </tr>
-                    <tr>
-                        <td>Lash Lift and Tint</td>
-                        <td>£45.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="faq display-none">
-        <h2 class="heading">Lash Services FAQ</h2>
-        <div class="faq-item">
-            <h3>What are lash extensions?</h3>
-            <p>Lash extensions are semi-permanent fibers that are attached to your natural eyelashes to make them look longer, fuller, and darker.</p>
-        </div>
-        <div class="faq-item">
-            <h3>How long do lash extensions last?</h3>
-            <p>Lash extensions typically last through the length of your natural lash growth cycle, which is about six to eight weeks.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Are lash extensions safe?</h3>
-            <p>Yes, when applied by a trained professional, lash extensions are safe. It's important to follow aftercare instructions to maintain their condition.</p>
-        </div>
-    </section>
+            <div class="col-lg-6 service-info">
+                <h1 class="heading">
+                    Lashes
+                </h1>
+                <p class="text">Enhance your natural beauty with our professional lash extensions. Perfect for any
+                    occasion!
+                </p>
+            </div>
+            <div class="col-lg-6 service-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Classic Lash Extensions</td>
+                            <td>£50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Volume Lash Extensions</td>
+                            <td>£60.00</td>
+                        </tr>
+                        <tr>
+                            <td>Lash Lift and Tint</td>
+                            <td>£45.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="faq display-none">
+            <h2 class="heading">Lash Services FAQ</h2>
+            <div class="faq-item">
+                <h3>What are lash extensions?</h3>
+                <p>Lash extensions are semi-permanent fibers that are attached to your natural eyelashes to make them
+                    look longer, fuller, and darker.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long do lash extensions last?</h3>
+                <p>Lash extensions typically last through the length of your natural lash growth cycle, which is about
+                    six to eight weeks.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are lash extensions safe?</h3>
+                <p>Yes, when applied by a trained professional, lash extensions are safe. It's important to follow
+                    aftercare instructions to maintain their condition.</p>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
-        <section class="subscribe">
+        <section class="subscribe display-none">
             <div>
                 <h1 class="heading">Join Our Mailing List!</h1>
                 <p class="text">Join our mailing list to be the first to know about new and exciting treatments,
@@ -111,13 +115,13 @@
             <div class="row subscribe-form">
                 <form action="/submit" method="post" class="text">
                     <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" required>
 
                     <label for="lastname">Last Name:</label>
                     <input type="text" id="lastname" name="lastname">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <input type="submit" value="Submit">
                 </form>
@@ -184,7 +188,7 @@
                 </p>
             </div>
         </div>
-        
+
     </footer>
     <!-- The Link for all The Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/f302dda9d1.js" crossorigin="anonymous"></script>
@@ -192,6 +196,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('formSubmitted')) {
+                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+            } else {
+                document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    // Replace the entire subscribe section with a message
+                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    // Store the form submission status in localStorage
+                    localStorage.setItem('formSubmitted', 'true');
+                });
+            }
+        });
+
+
+    </script>
 </body>
 
 </html>

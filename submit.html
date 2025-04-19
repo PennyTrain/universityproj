@@ -102,7 +102,7 @@
         <div class="row booked-message">
             <p class="small-print">Can we politely remind everyone, we do require at least 24 hours notice to cancel or
                 change your appointment. Failure to do so will result in 50% of your treatment value fee being charged.
-                We reserve the right to refuse to rebook your appointment if you fail to comply with our policy. </p>   
+                We reserve the right to refuse to rebook your appointment if you fail to comply with our policy. </p>
         </div>
         <!-- TESTIMONIALS -->
         <section class="testimonials">
@@ -149,7 +149,7 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <section class="subscribe">
+        <section class="subscribe display-none">
             <div>
                 <h1 class="heading">Join Our Mailing List!</h1>
                 <p class="text">Join our mailing list to be the first to know about new and exciting treatments,
@@ -160,13 +160,13 @@
             <div class="row subscribe-form">
                 <form action="/submit" method="post" class="text">
                     <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" required>
 
                     <label for="lastname">Last Name:</label>
                     <input type="text" id="lastname" name="lastname">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <input type="submit" value="Submit">
                 </form>
@@ -251,6 +251,22 @@
             displayNameElement.textContent = firstName;
             displayAppointmentType.textContent = appointmentType;
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('formSubmitted')) {
+                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+            } else {
+                document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    // Replace the entire subscribe section with a message
+                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    // Store the form submission status in localStorage
+                    localStorage.setItem('formSubmitted', 'true');
+                });
+            }
+        });
+
+
     </script>
 </body>
 

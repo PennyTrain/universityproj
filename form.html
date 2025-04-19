@@ -47,7 +47,9 @@
             </div>
         </nav>
     </header>
+    <!-- CONTENT -->
     <main class="container">
+        <!-- FORM -->
         <div class="row service-container">
             <h1 class="heading">Book with us!</h1>
             <p class="form-desc display-none">
@@ -57,7 +59,6 @@
                     soothing facial, or relaxing massage, we have the perfect service to meet your needs. Book your
                     appointment today and discover the blissful difference!</span>
             </p>
-
             <form class="col-lg-6 form-container">
                 <label for="firstname" class="form-label">First Name:</label>
                 <input type="text" id="firstname" name="firstname" class="form-control" aria-label="First Name"
@@ -91,13 +92,14 @@
 
                 <button type="submit" class="button link" formaction="submit.html">Submit</button>
             </form>
-
+            <!-- GOOGLE MAP -->
             <div class="col-lg-6 map-container">
                 <iframe title="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCuBfkrmtyc3Rd8u2uYxb0xa2ozAvCz7fY&q=Beauty+Bliss,22+Lowestoft+Road,Carlton+Colville,NR33+8JD">
                 </iframe>
             </div>
+            <!-- CANELATION POLICY -->
             <p class="small-print">Can we politely remind everyone, we do require at least 24 hours notice to cancel or
                 change your appointment. Failure to do so will result in 50% of your treatment value fee being charged.
                 We reserve the right to refuse to rebook your appointment if you fail to comply with our policy. </p>
@@ -105,10 +107,11 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <section class="subscribe">
+        <section class="subscribe display-none">
             <div>
                 <h1 class="heading">Join Our Mailing List!</h1>
-                <p class="text display-none">Join our mailing list to be the first to know about new and exciting treatments,
+                <p class="text display-none">Join our mailing list to be the first to know about new and exciting
+                    treatments,
                     promotions
                     and offers
                     from Beauty Bliss!</p>
@@ -116,10 +119,10 @@
             <div class="row subscribe-form">
                 <form id="subscribeForm" class="text">
                     <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" required>
 
                     <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname">
+                    <input type="text" id="lastname" name="lastname" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
@@ -198,53 +201,44 @@
         crossorigin="anonymous"></script>
 
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                localStorage.removeItem('firstName');
+                localStorage.removeItem('appointmentType');
+                const firstName = document.getElementById('firstname').value;
+                const appointmentType = document.getElementById('appointment_type').value;
+                localStorage.setItem('firstName', firstName);
+                localStorage.setItem('appointmentType', appointmentType);
+                window.location.href = "submit.html";
+            });
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+            form.addEventListener('submit', function (event) {
+                const appointmentDate = document.getElementById('appointment_date').value;
+                const today = new Date().toISOString().split('T')[0];
 
-        // Clear old data from localStorage
-        localStorage.removeItem('firstName');
-        localStorage.removeItem('appointmentType');
-
-        const firstName = document.getElementById('firstname').value;
-        const appointmentType = document.getElementById('appointment_type').value;
-
-        // Store new data in localStorage
-        localStorage.setItem('firstName', firstName);
-        localStorage.setItem('appointmentType', appointmentType);
-
-        window.location.href = "submit.html";
-    });
-
-    form.addEventListener('submit', function (event) {
-        const appointmentDate = document.getElementById('appointment_date').value;
-        const today = new Date().toISOString().split('T')[0];
-
-        if (appointmentDate < today) {
-            event.preventDefault();
-            alert('Please select a future date for your appointment.');
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-            // Check if the user has already submitted the form
-            if (localStorage.getItem('formSubmitted')) {
-                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-            }
-
-            document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent the default form submission
-
-                // Replace the form with a message
-                document.querySelector('.subscribe-form').innerHTML = '<p>Thank you for subscribing!</p>';
-
-                // Store the form submission status in localStorage
-                localStorage.setItem('formSubmitted', 'true');
+                if (appointmentDate < today) {
+                    event.preventDefault();
+                    alert('Please select a future date for your appointment.');
+                }
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('formSubmitted')) {
+                document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+            } else {
+                document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    // Replace the entire subscribe section with a message
+                    document.querySelector('.subscribe').innerHTML = '<p>Thank you for subscribing!</p>';
+                    // Store the form submission status in localStorage
+                    localStorage.setItem('formSubmitted', 'true');
+                });
+            }
+        });
+
     </script>
 
 </body>
