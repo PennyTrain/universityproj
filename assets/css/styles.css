@@ -507,6 +507,7 @@
         color: black;
         margin: 3rem;
         padding: 2rem;
+        gap: 1rem;
 
     }
 
@@ -562,29 +563,16 @@
         cursor: pointer;
     }
 
-    @media (max-width: 800px) {
-        .subscribe-form {
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-    
-        .form-container {
-            padding: 10px;
-            font-size: 12px;
-        }
-    
-        .form-desc {
-            font-size: 16px;
-        }
-    
-        form input {
-            width: 100%;
-            max-width: 20rem;   
-        }
+    /* AFTER SUBSCRIPTION */
 
-        .display-none {
-            display:none;
-        }
+    .final-message {
+        display: flex;
+        color: #333;
+        justify-content: center;
+        margin: 2rem;
+        padding: 1rem;
+        background-color: #fbe0de;
+        border-radius: 10px;
     }
 
     /* FOOTER STYLES */
@@ -628,12 +616,33 @@
         color: #fff;
     }
 
-    .final-message {
-        display: flex;
-        color: #333;
-        justify-content: center;
-        margin: 2rem;
-        padding: 1rem;
-        background-color: #fbe0de;
-        border-radius: 10px;
+    @media (max-width: 768px) {
+        .subscribe-form {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    
+        .form-container {
+            padding: 10px;
+            font-size: 12px;
+        }
+    
+        .form-desc {
+            font-size: 16px;
+        }
+    
+        form input {
+            width: 100%;
+            max-width: 20rem;   
+        }
+
+        .display-none {
+            display:none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .service-container {
+            padding: .5rem;
+        }
     }
