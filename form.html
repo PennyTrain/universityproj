@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Bliss</title>
-    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -68,42 +68,46 @@
             </p>
             <form class="col-lg-6 form-container">
                 <label for="firstname" class="form-label">First Name:</label>
-                <input type="text" id="firstname" name="firstname" class="form-control" aria-label="First Name"
-                    required>
-
+                <input type="text" id="bookfirstname" name="firstname" class="form-control" aria-label="First Name" required>
+            
                 <label for="lastname" class="form-label">Last Name:</label>
-                <input type="text" id="lastname" name="lastname" class="form-control" aria-label="Last Name" required>
-
+                <input type="text" id="booklastname" name="lastname" class="form-control" aria-label="Last Name" required>
+            
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" aria-label="Email" required>
-
+                <input type="email" id="bookemail" name="email" class="form-control" aria-label="Email" required>
+            
                 <label for="phone" class="form-label">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" class="form-control" aria-label="Phone Number">
-
+            
                 <label for="appointment_type" class="form-label">Appointment Type:</label>
-                <select id="appointment_type" name="appointment_type" class="form-control" aria-label="Appointment Type"
-                    required>
+                <select id="appointment_type" name="appointment_type" class="form-control" aria-label="Appointment Type" required>
                     <option value="" disabled selected>Select an option</option>
                     <option value="Lashes">Lashes</option>
                     <option value="Nails">Nails</option>
                     <option value="Treatment">Body-treatment</option>
                 </select>
-
+            
                 <label for="appointment_date" class="form-label">Appointment Date:</label>
-                <input type="date" id="appointment_date" name="appointment_date" class="form-control"
-                    aria-label="Appointment Date" required>
-
+                <input type="date" id="appointment_date" name="appointment_date" class="form-control" aria-label="Appointment Date" required>
+            
                 <label for="appointment_time" class="form-label">Appointment Time:</label>
-                <input type="time" id="appointment_time" name="appointment_time" class="form-control"
-                    aria-label="Appointment Time" required>
-
+                <input type="time" id="appointment_time" name="appointment_time" class="form-control" aria-label="Appointment Time" required>
+            
                 <button type="submit" class="button link" formaction="submit.html">Submit</button>
             </form>
+            
+            
             <!-- GOOGLE MAP -->
             <div class="col-lg-6 map-container">
-                <iframe title="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCuBfkrmtyc3Rd8u2uYxb0xa2ozAvCz7fY&q=Beauty+Bliss,22+Lowestoft+Road,Carlton+Colville,NR33+8JD">
+                <iframe 
+                title="map"
+                width="600" 
+                height="450" 
+                style="border:0" 
+                loading="lazy" 
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCuBfkrmtyc3Rd8u2uYxb0xa2ozAvCz7fY&q=Beauty+Bliss,22+Lowestoft+Road,Carlton+Colville,NR33+8JD">
                 </iframe>
             </div>
             <!-- CANELATION POLICY -->
@@ -116,7 +120,7 @@
     <footer>
         <section class="subscribe display-none">
             <div>
-                <h1 class="heading">Join Our Mailing List!</h1>
+                <h2 class="heading">Join Our Mailing List!</h2>
                 <p class="text display-none">Join our mailing list to be the first to know about new and exciting
                     treatments,
                     promotions
@@ -212,11 +216,11 @@
             const form = document.querySelector('form');
             form.addEventListener('submit', function (event) {
                 event.preventDefault();
-                localStorage.removeItem('firstName');
+                localStorage.removeItem('bookfirstName');
                 localStorage.removeItem('appointmentType');
-                const firstName = document.getElementById('firstname').value;
+                const firstName = document.getElementById('bookfirstname').value;
                 const appointmentType = document.getElementById('appointment_type').value;
-                localStorage.setItem('firstName', firstName);
+                localStorage.setItem('bookfirstName', firstName);
                 localStorage.setItem('appointmentType', appointmentType);
                 window.location.href = "submit.html";
             });
