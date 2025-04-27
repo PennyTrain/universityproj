@@ -22,16 +22,18 @@
     <!-- HEADER -->
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid moving-nav">
-                <a class="navbar-brand link logo" href="./index.html"><i class="fa-solid fa-b"></i><i
-                        class="fa-brands fa-d-and-d"></i><i class="fa-solid fa-b"></i></a>
+                <a class="navbar-brand link logo" href="./index.html">
+                    <span class="never-display">Logo that goes to home page</span>
+                    <i class="fa-solid fa-b"></i>
+                    <i class="fa-brands fa-d-and-d"></i>
+                    <i class="fa-solid fa-b"></i></a>
                 <button class="navbar-toggler border link hamburger" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon link"><i class="fa-solid fa-bars hamburger"></i></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -129,13 +131,13 @@
             </div>
             <div class="row subscribe-form">
                 <form id="subscribeForm" class="text">
-                    <label for="firstname">First Name:</label>
+                    <label for="submit-firstname">First Name:</label>
                     <input type="text" id="firstname" name="firstname" required>
 
-                    <label for="lastname">Last Name:</label>
+                    <label for="submit-lastname">Last Name:</label>
                     <input type="text" id="lastname" name="lastname" required>
 
-                    <label for="email">Email:</label>
+                    <label for="submit-email">Email:</label>
                     <input type="email" id="email" name="email">
 
                     <input type="submit" value="Submit">
