@@ -638,3 +638,9 @@
                 padding: .5rem;
             }
         }
+
+        @media (max-width: 470px) {
+            .display-none-sm {
+                display: none;
+            }
+        }
