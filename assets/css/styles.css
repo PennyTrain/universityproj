@@ -400,6 +400,10 @@
             color: blue;
             font-size: 24px;
         }
+
+        .never-display {
+            display: none;
+        }
         
         /* FAQ */
 
