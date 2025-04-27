@@ -1,657 +1,642 @@
-        /*
+/*
         * Prefixed by https://autoprefixer.github.io
         * PostCSS: v8.4.14,
         * Autoprefixer: v10.4.7
         * Browsers: last 4 version
         */
-
-        /*
-        * Prefixed by https://autoprefixer.github.io
-        * PostCSS: v8.4.14,
-        * Autoprefixer: v10.4.7
-        * Browsers: last 4 version
-        */
-
-        /* css reset: http://meyerweb.com/eric/tools/css/reset/ 
+/* css reset: http://meyerweb.com/eric/tools/css/reset/ 
         v2.0 | 20110126
         License: none (public domain)
         */
-
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        embed,
-        figure,
-        figcaption,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        output,
-        ruby,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-
-        /* HTML5 display-role reset for older browsers */
-        article,
-        aside,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-
-        body {
-            line-height: 1;
-        }
-
-        ol,
-        ul {
-            list-style: none;
-        }
-
-        blockquote,
-        q {
-            quotes: none;
-        }
-
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-            content: '';
-            content: none;
-        }
-
-        /*end of css reset*/
-
-        /* GENERAL ELEMENTS  */
-
-        body {
-            background-color: rgb(254, 198, 195);
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .heading {
-            font-size: 40px;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .sub-heading {
-            font-size: 30px;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .text {
-            font-size: 20px;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .small-print {
-            margin-top: .5rem;
-            font-size: 15px;
-            text-align: center;
-        }
-
-        p.text span {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        /* NAVBAR */
-        nav {
-            height: 9rem;
-            color: white;
-            background-color: #333;
-        }
-
-        nav,
-        .moving-nav,
-        .dropdown-container {
-            background-color: #333;
-            z-index: 1000;
-        }
-
-        .dropdown-container {
-            background-color: #333;
-        }
-
-        .link {
-            color: white;
-        }
-
-        .link:hover,
-        .link:focus {
-            color: #fec6c3;
-            background-color: #333;
-        }
-
-        .hamburger {
-            padding-top: .4rem;
-        }
-
-        .logo {
-            font-size: 32px;
-            margin-left: 3rem;
-            margin-right: 3rem;
-        }
-
-        /* TABLES */
-        .service-table table {
-            border: 2px solid #343a40;
-            width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-
-        .service-table thead {
-            background-color: #343a40;
-            color: #fff;
-        }
-
-        .service-table th,
-        .service-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .service-table tbody tr:hover {
-            background-color: #f1f1f1;
-        }
-
-
-        /* SERVICE PAGES */
-        .service-container {
-            margin-top: 3rem;
-            margin: 4rem;
-            padding: 2rem;
-            background-color: rgb(248, 249, 250, 0.5);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-info {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .service-info .heading {
-            font-size: 2.5rem;
-            color: #343a40;
-            margin-bottom: 1rem;
-        }
-
-        .service-info .text {
-            font-size: 1.2rem;
-            color: #6c757d;
-        }
-
-        /* CARD */
-
-        .all-cards {
-            justify-content: center;
-        }
-
-        .button {
-            background-color: #333;
-            border: 3px solid #808080;
-            border-radius: 10%;
-            margin-top: 2rem;
-            padding: 1rem;
-
-        }
-
-        .cards {
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
-            background-color: #fbe0de;
-            font-size: 16px;
-            font-weight: 400;
-            color: #333;
-            transition: transform 0.3s ease;
-            margin: 1rem;
-            text-align: center;
-            width: 18rem;
-        }
-    
-        .card-title {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .card-image {
-            width: 100%;
-            height: 11rem;
-            object-fit: cover;
-        }
-
-        /* TESTIMONIALS */
-
-        .testimonial-holder {
-            margin: 1rem;
-        }
-
-        .home-heading {
-            color: black;
-            margin-bottom: 1.5rem;
-            margin-top: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
-            background-color: #fbe0de;
-            color: #333;
-            font-size: 3rem;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .testimonial-holder {
-            justify-content: center;
-        }
-
-        .review-container {
-            gap: 20px;
-        }
-
-        .review-body {
-            background-color: #fbe0de;
-        }
-
-        .reviewer {
-            color: #333;
-        }
-
-        .rating {
-            color: #333;
-            font-size: 24px;
-            background-color: #fbe0de;    
-        }
-
-        .card-title {
-            color: #333;
-        }
-
-        .card-text {
-            color: #666;
-        }
-
-        /* CONTACT US */
-
-        .map-container iframe {
-            border: none;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* BANNER */
-
-        .info-banner {
-            box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
-            padding: 20px;
-            background-color: #fbe0de;
-            margin: auto;
-            border-radius: 10px;
-            margin-top: 1rem;
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
-        /* CAROUSEL */
-
-        .carousel-item {
-            height: 500px;
-        }
-
-        .carousel-item img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .custom-icon {
-            color: blue;
-            font-size: 24px;
-        }
-
-        .never-display {
-            display: none;
-        }
-        
-        /* FAQ */
-
-        .faq {
-            background-color: #fbe0de;
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-        
-        .faq-item h3 {
-            color: #000000;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .faq-item p {
-            color: #333;
-            font-size: 1rem;
-        }
-        
-        /* ACCORDION */
-
-        /* ACCORDION STYLE */
-    .special-offers-accordion {
-        background-color: #fbe0de;
-        padding: 2rem 0;
-        border-radius: 10px;
-    }
-
-    .offers-heading {
-        text-align: center;
-        font-size: 2rem;
-        color: #d96426;
-        margin-bottom: 1.5rem;
-    }
-
-    .accordion {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #fbe0de;
-        border-radius: 10px;
-        padding: 2rem;
-    }
-
-    .accordion-item {
-        border-bottom: 1px solid #d96426;
-    }
-
-    .accordion-button {
-        background-color: #fbe0fb !important; /* Change this to your desired color */
-        color: #333 !important;
-        padding: 1rem;
-        width: 100%;
-        text-align: left;
-        border: none;
-        cursor: pointer;
-        font-size: 1.2rem;
-        transition: background-color 0.3s ease;
-    }
-
-    .accordion-button:hover {
-        background-color: #333;
-        color: #fff;
-    }
-
-    .accordion-content {
-        display: none;
-        padding: 1rem;
-        background-color: #fec6c3;
-        text-align:center;
-    }
-
-    .accordion-content p {
-        margin-bottom: 1rem;
-    }
-
-    .offer-button {
-        background-color: #333;
-        color: #fff;
-        padding: 0.75rem 1.5rem;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
-    }
-
-    .offer-button:hover {
-        background-color: #333;
-    }
-
-        /* SUBMITTED */
-
-        .booked-message {
-            text-align: center;
-            background-color:#fbe0de;
-            border-radius: 10px;
-            color: black;
-            margin: 3rem;
-            padding: 2rem;
-            gap: 1rem;
-
-        }
-
-
-        /* SUBSCRIBE */
-
-        .subscribe-form {
-            justify-content: center;
-            margin-left: 5rem;
-            margin-right: 5rem;
-        }
-
-        
-        .form-container {
-            padding: 20px;
-            font-size: 16px;
-            color: #333;
-            gap: .5rem;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-desc {
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        form input {
-            width: 30rem;
-            margin: auto;
-        }   
-
-        form input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        form input[type="submit"] {
-            padding: 10px;
-            background-color: #fbe0de;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* AFTER SUBSCRIPTION */
-
-        .final-message {
-            display: flex;
-            color: #333;
-            justify-content: center;
-            margin: 2rem;
-            padding: 1rem;
-            background-color: #fbe0de;
-            border-radius: 10px;
-        }
-
-        /* FOOTER STYLES */
-
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            width: 100%;
-            margin-top: 2rem;
-            box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
-        }
-
-        footer h3 {
-            color: #fbe0de;
-        }
-
-        /* FOOTER TABLE */
-
-        .open-hours-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .open-hours-table th,
-        .open-hours-table td {
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .open-hours-table th {
-            background-color: #333;
-            color: #fff;
-        }
-
-        .open-hours-table td {
-            background-color: #333;
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .subscribe-form {
-                margin-left: 1rem;
-                margin-right: 1rem;
-            }
-        
-            .form-container {
-                padding: 10px;
-                font-size: 12px;
-            }
-        
-            .form-desc {
-                font-size: 16px;
-            }
-        
-            form input {
-                width: 100%;
-                max-width: 20rem;   
-            }
-
-            .display-none {
-                display:none;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .service-container {
-                padding: .5rem;
-            }
-        }
-
-        @media (max-width: 470px) {
-            .display-none-sm {
-                display: none;
-            }
-        }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/*end of css reset*/
+
+/* GENERAL ELEMENTS  */
+
+body {
+  background-color: rgb(254, 198, 195);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  font-size: 40px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 30px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.small-print {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  text-align: center;
+}
+
+p.text span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* NAVBAR */
+nav {
+  height: 9rem;
+  color: white;
+  background-color: #333;
+}
+
+nav,
+.moving-nav,
+.dropdown-container {
+  background-color: #333;
+  z-index: 1000;
+}
+
+.dropdown-container {
+  background-color: #333;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover,
+.link:focus {
+  color: #fec6c3;
+  background-color: #333;
+}
+
+.hamburger {
+  padding-top: 0.4rem;
+}
+
+.logo {
+  font-size: 32px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* TABLES */
+.service-table table {
+  border: 2px solid #343a40;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.service-table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.service-table th,
+.service-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.service-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* SERVICE PAGES */
+.service-container {
+  margin-top: 3rem;
+  margin: 4rem;
+  padding: 2rem;
+  background-color: rgb(248, 249, 250, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.service-info .heading {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.service-info .text {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* CARD */
+
+.all-cards {
+  justify-content: center;
+}
+
+.button {
+  background-color: #333;
+  border: 3px solid #808080;
+  border-radius: 10%;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.cards {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
+  background-color: #fbe0de;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  transition: transform 0.3s ease;
+  margin: 1rem;
+  text-align: center;
+  width: 18rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-holder {
+  margin: 1rem;
+}
+
+.home-heading {
+  color: black;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
+  background-color: #fbe0de;
+  color: #333;
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-holder {
+  justify-content: center;
+}
+
+.review-container {
+  gap: 20px;
+}
+
+.review-body {
+  background-color: #fbe0de;
+}
+
+.reviewer {
+  color: #333;
+}
+
+.rating {
+  color: #333;
+  font-size: 24px;
+  background-color: #fbe0de;
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+/* CONTACT US */
+
+.map-container iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* BANNER */
+
+.info-banner {
+  box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
+  padding: 20px;
+  background-color: #fbe0de;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* CAROUSEL */
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-icon {
+  color: blue;
+  font-size: 24px;
+}
+
+.never-display {
+  display: none;
+}
+
+/* FAQ */
+
+.faq {
+  background-color: #fbe0de;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* ACCORDION */
+
+/* ACCORDION STYLE */
+.special-offers-accordion {
+  background-color: #fbe0de;
+  padding: 2rem 0;
+  border-radius: 10px;
+}
+
+.offers-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #d96426;
+  margin-bottom: 1.5rem;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fbe0de;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #d96426;
+}
+
+.accordion-button {
+  background-color: #fbe0fb !important;
+  color: #333 !important;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: #fec6c3;
+  text-align: center;
+}
+
+.accordion-content p {
+  margin-bottom: 1rem;
+}
+
+.offer-button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #333;
+}
+
+/* SUBMITTED */
+
+.booked-message {
+  text-align: center;
+  background-color: #fbe0de;
+  border-radius: 10px;
+  color: black;
+  margin: 3rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+/* SUBSCRIBE */
+
+.subscribe-form {
+  justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.form-container {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-desc {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  width: 30rem;
+  margin: auto;
+}
+
+form input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+  background-color: #fbe0de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* AFTER SUBSCRIPTION */
+
+.final-message {
+  display: flex;
+  color: #333;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #fbe0de;
+  border-radius: 10px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 6px 15px rgba(209, 100, 38, 0.1);
+}
+
+footer h3 {
+  color: #fbe0de;
+}
+
+/* FOOTER TABLE */
+
+.open-hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.open-hours-table th,
+.open-hours-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.open-hours-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.open-hours-table td {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .subscribe-form {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .form-container {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .form-desc {
+    font-size: 16px;
+  }
+
+  form input {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .display-none {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .display-none-sm {
+    display: none;
+  }
+}
