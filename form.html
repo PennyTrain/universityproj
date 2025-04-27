@@ -213,46 +213,9 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.querySelector('form');
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                localStorage.removeItem('bookfirstName');
-                localStorage.removeItem('appointmentType');
-                const firstName = document.getElementById('bookfirstname').value;
-                const appointmentType = document.getElementById('appointment_type').value;
-                localStorage.setItem('bookfirstName', firstName);
-                localStorage.setItem('appointmentType', appointmentType);
-                window.location.href = "submit.html";
-            });
 
-            form.addEventListener('submit', function (event) {
-                const appointmentDate = document.getElementById('appointment_date').value;
-                const today = new Date().toISOString().split('T')[0];
+    <script src="./assets/js/script.js"></script>
 
-                if (appointmentDate < today) {
-                    event.preventDefault();
-                    alert('Please select a future date for your appointment.');
-                }
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            if (localStorage.getItem('formSubmitted')) {
-                document.querySelector('.subscribe').innerHTML = '<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
-            } else {
-                document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent the default form submission
-                    // Replace the entire subscribe section with a message
-                    document.querySelector('.subscribe').innerHTML ='<div class="final-message"><i class="fa-solid fa-star"></i><p> Thank you for subscribing! </p><i class="fa-solid fa-star"></i></div>';
-                    // Store the form submission status in localStorage
-                    localStorage.setItem('formSubmitted', 'true');
-                });
-            }
-        });
-
-    </script>
 
 </body>
 
