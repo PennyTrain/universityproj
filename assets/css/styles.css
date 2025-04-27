@@ -299,6 +299,12 @@
             text-align: center;
             width: 18rem;
         }
+    
+        .card-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
 
         .card-image {
             width: 100%;
@@ -342,8 +348,9 @@
         }
 
         .rating {
-            color: gold;
+            color: #ffd700;
             font-size: 24px;
+            text-shadow: 0 0 1px #333;
         }
 
         .card-title {
