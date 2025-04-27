@@ -348,9 +348,9 @@
         }
 
         .rating {
-            color: #ffd700;
+            color: #333;
             font-size: 24px;
-            text-shadow: 0 0 1px #333;
+            background-color: #fbe0de;    
         }
 
         .card-title {
