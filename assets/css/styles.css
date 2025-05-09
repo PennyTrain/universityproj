@@ -139,7 +139,12 @@ q:after {
 /* GENERAL ELEMENTS  */
 
 body {
-  background-color: rgb(254, 198, 195);
+  /* background-color: rgb(254, 198, 195); */
+  background: linear-gradient(
+    to bottom,
+    #fec6c3cc,
+    #fc5f5fcc
+  );
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
