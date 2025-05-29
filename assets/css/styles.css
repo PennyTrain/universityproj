@@ -516,7 +516,7 @@
         
         .accordion-content {
           display: none;
-          padding: 1rem;
+          padding: 2rem;
           background-color: #fec6c3;
           text-align: center;
         }
@@ -540,6 +540,15 @@
         
         .offer-button:hover {
           background-color: #333;
+        }
+        
+        .guten {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
         }
         
         /* SUBMITTED */
